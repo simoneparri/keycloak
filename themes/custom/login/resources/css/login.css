@@ -594,6 +594,7 @@ ul#kc-totp-supported-apps {
     max-width: 500px;
     border-top: 4px solid;
     border-color: #060; /* default - IE compatibility */
+    border-radius: 10px;
 }
 
 /*phone*/
@@ -603,7 +604,7 @@ ul#kc-totp-supported-apps {
         margin-left: 0;
         margin-right: 0;
         padding-top: 0;
-        border-top: 0;
+        /* border-top: 0; */
         box-shadow: 0 0;
     }
 
