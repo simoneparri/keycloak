@@ -441,9 +441,9 @@ ul#kc-totp-supported-apps {
 
 @media (max-width: 767px) {
 
-    .login-pf body {
+    /* .login-pf body {
         background: white;
-    }
+    } */
 
     #kc-header {
         padding-left: 15px;
@@ -456,7 +456,7 @@ ul#kc-totp-supported-apps {
         font-size: 16px;
         font-weight: bold;
         padding: 20px 60px 0 0;
-        color: #72767b;
+        /* color: #72767b; */
         letter-spacing: 0;
     }
 
@@ -488,6 +488,9 @@ ul#kc-totp-supported-apps {
         right: 20px;
         text-align: right;
         z-index: 9999;
+    }
+    #kc-locale-dropdown{
+        background: #fff;
     }
 }
 
