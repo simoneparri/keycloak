@@ -1,5 +1,6 @@
 /*Internet Explorer 11 compatibility workaround - IE does not support CSS variables */
 
+
 @media all and (-ms-high-contrast: none),
 (-ms-high-contrast: active) {
     .pf-c-tile {
@@ -28,19 +29,19 @@
         border-radius: 3px;
     }
     .pf-c-tile:hover {
-        border: 1px solid rgb(40, 88, 32);
+        border: 1px solid #060;
         border-radius: 3px;
     }
     .pf-c-tile:hover .pf-c-tile__title,
     .pf-c-tile:hover .pf-c-tile__icon {
-        color: rgb(40, 88, 32);
+        color: #060;
     }
     .pf-c-tile__input:checked + .pf-c-tile .pf-c-tile__title,
     .pf-c-tile__input:checked + .pf-c-tile .pf-c-tile__icon {
-        color: rgb(40, 88, 32);
+        color: #060;
     }
     .pf-c-tile__input:checked + .pf-c-tile {
-        border: 2px solid rgb(40, 88, 32);
+        border: 2px solid #060;
         border-radius: 3px;
     }
     .pf-c-tile.pf-m-disabled {

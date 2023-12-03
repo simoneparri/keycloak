@@ -21,7 +21,7 @@
         <link rel="mask-icon" href="${url.resourcesPath}/img/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
-        
+
     <#if properties.stylesCommon?has_content>
         <#list properties.stylesCommon?split(' ') as style>
             <link href="${url.resourcesCommonPath}/${style}" rel="stylesheet" />
@@ -47,8 +47,10 @@
 <body class="${properties.kcBodyClass!}">
 <div class="${properties.kcLoginClass!}">
     <div id="kc-header" class="${properties.kcHeaderClass!}">
+        <img class="logo" src="${url.resourcesPath}/img/standard_logo_trasp.png" data-src="${url.resourcesPath}/img/standard_logo_trasp.png" decoding="async">
         <div id="kc-header-wrapper"
              class="${properties.kcHeaderWrapperClass!}">${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}</div>
+
     </div>
     <div class="${properties.kcFormCardClass!}">
         <header class="${properties.kcFormHeaderClass!}">
