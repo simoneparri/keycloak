@@ -183,7 +183,7 @@ a#kc-current-locale-link::after {
 }
 
 div.kc-logo-text {
-    background-image: url(../img/standard_logo_trasp.png);
+    background-image: url(../img/keycloak-logo-text.png);
     background-repeat: no-repeat;
     height: 63px;
     width: 300px;
@@ -207,18 +207,6 @@ div.kc-logo-text span {
     line-height: 1.2em;
     padding: 62px 10px 20px;
     white-space: normal;
-}
-
-.login-pf-page-header::after {
-    content: '';
-    background-image: url(../img/standard_logo_trasp.png);
-
-    width: 100px;
-    height: 100px;
-    z-index: 9999;
-    position: absolute;
-    top: 120px;
-    right: 50px;
 }
 #kc-content {
     width: 100%;
