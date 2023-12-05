@@ -212,9 +212,8 @@
                             align="left"
                           >
                           <!-- / KC MESSAGE -->
-${kcSanitize(msg("emailTestBodyHtml",realmName))?no_esc}
-
-                         <!-- /// KC MESSAGE -->
+${kcSanitize(msg("identityProviderLinkBodyHtml", identityProviderAlias, realmName, identityProviderContext.username, link, linkExpiration, linkExpirationFormatter(linkExpiration)))?no_esc}
+ <!-- /// KC MESSAGE -->
                           </td>
                         </tr>
                       </table>

@@ -212,9 +212,8 @@
                             align="left"
                           >
                           <!-- / KC MESSAGE -->
-${kcSanitize(msg("emailTestBodyHtml",realmName))?no_esc}
-
-                         <!-- /// KC MESSAGE -->
+${kcSanitize(msg("passwordResetBodyHtml",link, linkExpiration, realmName, linkExpirationFormatter(linkExpiration)))?no_esc}
+ <!-- /// KC MESSAGE -->
                           </td>
                         </tr>
                       </table>

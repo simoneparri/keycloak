@@ -1,3 +1,7 @@
+<#outputformat "plainText">
+<#assign requiredActionsText><#if requiredActions??><#list requiredActions><#items as reqActionItem>${msg("requiredAction.${reqActionItem}")}<#sep>, </#sep></#items></#list></#if></#assign>
+</#outputformat>
+
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -212,9 +216,8 @@
                             align="left"
                           >
                           <!-- / KC MESSAGE -->
-${kcSanitize(msg("emailTestBodyHtml",realmName))?no_esc}
-
-                         <!-- /// KC MESSAGE -->
+${kcSanitize(msg("executeActionsBodyHtml",link, linkExpiration, realmName, requiredActionsText, linkExpirationFormatter(linkExpiration)))?no_esc}
+ <!-- /// KC MESSAGE -->
                           </td>
                         </tr>
                       </table>
@@ -335,3 +338,4 @@ ${kcSanitize(msg("emailTestBodyHtml",realmName))?no_esc}
     </table>
   </body>
 </html>
+

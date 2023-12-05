@@ -212,9 +212,8 @@
                             align="left"
                           >
                           <!-- / KC MESSAGE -->
-${kcSanitize(msg("emailTestBodyHtml",realmName))?no_esc}
-
-                         <!-- /// KC MESSAGE -->
+${kcSanitize(msg("eventUpdateTotpBodyHtml",event.date, event.ipAddress))?no_esc}
+ <!-- /// KC MESSAGE -->
                           </td>
                         </tr>
                       </table>
@@ -335,3 +334,4 @@ ${kcSanitize(msg("emailTestBodyHtml",realmName))?no_esc}
     </table>
   </body>
 </html>
+
