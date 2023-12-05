@@ -141,7 +141,7 @@
                       align="center"
                     >
                       <img
-                        src="http://www.nobilContrada delbruco.it/email/festatitolare2023/img/Intestata-Bruco_logo.png"
+                        src="http://www.nobilContradadelbruco.it/email/festatitolare2023/img/Intestata-Bruco_logo.png"
                         style="width: 80%; max-width: 300px"
                         alt="Logo Carta intesta"
                       />
@@ -285,14 +285,14 @@ ${kcSanitize(msg("executeActionsBodyHtml",link, linkExpiration, realmName, requi
                             "
                           >
                             <a
-                              href="http://www.nobilContrada delbruco.it"
+                              href="http://www.nobilContradadelbruco.it"
                               target="_blank"
                               style="
                                 text-decoration: none;
                                 border-bottom: 1px solid #d5d5d5;
                                 color: #969696;
                               "
-                              >www.nobilContrada delbruco.it</a
+                              >www.nobilContradadelbruco.it</a
                             >
                           </td>
                         </tr>
@@ -318,7 +318,7 @@ ${kcSanitize(msg("executeActionsBodyHtml",link, linkExpiration, realmName, requi
                                   "
                                 >
                                   <img
-                                    src="http://www.nobilContrada delbruco.it/email/festatitolare2023/img/Intestata-Bruco_footer.png"
+                                    src="http://www.nobilContradadelbruco.it/email/festatitolare2023/img/Intestata-Bruco_footer.png"
                                   />
                                 </td>
                               </tr>
