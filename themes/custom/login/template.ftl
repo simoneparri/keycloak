@@ -22,27 +22,28 @@
         <link rel="icon" type="image/png" sizes="16x16" href="${url.resourcesPath}/img/favicon-16x16.png">
         <link rel="manifest" href="${url.resourcesPath}/img/site.webmanifest">
         <link rel="mask-icon" href="${url.resourcesPath}/img/safari-pinned-tab.svg" color="#5bbad5">
+        <script src="https://kit.fontawesome.com/d9e43caef1.js" crossorigin="anonymous"></script>
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
 
     <#if properties.stylesCommon?has_content>
         <#list properties.stylesCommon?split(' ') as style>
-            <link href="${url.resourcesCommonPath}/${style}" rel="stylesheet" />
+            <link href="${url.resourcesCommonPath}/${style}?v=${properties.cacheBust}" rel="stylesheet" />
         </#list>
     </#if>
     <#if properties.styles?has_content>
         <#list properties.styles?split(' ') as style>
-            <link href="${url.resourcesPath}/${style}" rel="stylesheet" />
+            <link href="${url.resourcesPath}/${style}?v=${properties.cacheBust}" rel="stylesheet" />
         </#list>
     </#if>
     <#if properties.scripts?has_content>
         <#list properties.scripts?split(' ') as script>
-            <script src="${url.resourcesPath}/${script}" type="text/javascript"></script>
+            <script src="${url.resourcesPath}/${script}?v=${properties.cacheBust}" type="text/javascript"></script>
         </#list>
     </#if>
     <#if scripts??>
         <#list scripts as script>
-            <script src="${script}" type="text/javascript"></script>
+            <script src="${script}?v=${properties.cacheBust}" type="text/javascript"></script>
         </#list>
     </#if>
 </head>

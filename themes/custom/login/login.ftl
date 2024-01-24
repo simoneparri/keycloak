@@ -25,13 +25,29 @@
                     </#if>
                 </div>
 
-                <div class="${properties.kcFormGroupClass!}">
+                <div class="${properties.kcFormGroupClass!} password-container">
                     <label for="password" class="${properties.kcLabelClass!}">${msg("password")}</label>
 
                     <input tabindex="2" id="password" class="${properties.kcInputClass!}" name="password" type="password" autocomplete="off"
                            aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>"
                     />
+                    <i id="eye" class="fa-solid fa-eye fa-lg"></i>
                 </div>
+
+                <script>
+                    const eye = document.querySelector("#eye");
+                    const password = document.querySelector("#password");
+
+                    eye.addEventListener("click", function () {
+                        // toggle the type attribute
+                        const type = password.getAttribute("type") === "password" ? "text" : "password";
+                        password.setAttribute("type", type);
+                        
+                        // toggle the icon
+                        this.classList.toggle("fa-eye-slash");
+                    });
+
+                </script>
 
                 <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
                     <div id="kc-form-options">
